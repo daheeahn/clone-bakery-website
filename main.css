@@ -86,3 +86,63 @@ nav {
   object-fit: contain;
   margin-left: 22px;
 }
+
+.overview-top-container {
+  background-color: pink;
+  padding-left: 90px;
+  display: flex;
+  flex-direction: row;
+}
+
+.overview-top-container h1 {
+  font-size: 44px;
+  font-weight: bold;
+  color: #4a1d1f;
+  margin-bottom: 20px;
+}
+.overview-top-container p {
+  font-size: 24px;
+  color: #272727;
+  margin-bottom: 48px;
+}
+.overview-top-container .left-container {
+  padding-top: 90px;
+}
+.overview-top-container .right-container {
+  flex: 1;
+  display: flex;
+
+  justify-content: end;
+  background-color: lightcoral;
+}
+
+.overview-top-container .right-container img {
+  width: 720px;
+  height: 520px;
+  object-fit: contain;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+}
+/* Button: Order Now */
+.buttons-container button:nth-child(1) {
+  display: flex;
+  border: none;
+  color: #fff;
+  background-color: #4a1d1f;
+  border-radius: 5px;
+  padding: 10px 30px;
+  margin-right: 16px;
+  font-size: 20px;
+}
+/* Button: See All Menus */
+.buttons-container button:nth-child(2) {
+  display: flex;
+  border: 1px solid #4a1d1f;
+  color: #4a1d1f;
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-size: 20px;
+}
