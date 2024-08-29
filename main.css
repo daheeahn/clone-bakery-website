@@ -34,9 +34,10 @@ nav {
   align-items: center;
 }
 
-.nav-center-menu {
+.nav-center-menu a {
   font-size: 16px;
   color: #4a1d1f;
+  text-decoration: none;
 }
 
 /* Categories + bottom-arrow */
