@@ -2,8 +2,18 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   padding-bottom: 900px;
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 
 nav {
@@ -12,27 +22,32 @@ nav {
   flex-direction: row;
   align-items: center;
 }
+
 .nav-item {
   flex: 1;
 }
+
 .nav-item:nth-child(2) {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
+
 .nav-center-menu {
   font-size: 16px;
   color: #4a1d1f;
 }
+
 /* Categories + bottom-arrow */
 .nav-center-menu:nth-child(2) {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
 /* bottom-arrow */
-.nav-center-menu:nth-child(2) > img {
+.nav-center-menu:nth-child(2)>img {
   width: 10px;
   height: 10px;
   object-fit: contain;
@@ -45,7 +60,8 @@ nav {
   justify-content: flex-end;
   align-items: center;
 }
-.nav-item:nth-child(3) > .search-container {
+
+.nav-item:nth-child(3)>.search-container {
   border: 1px solid #4a1d1f;
   background-color: #4a1d1f;
   width: 250px;
@@ -53,26 +69,31 @@ nav {
   display: flex;
   flex-direction: row;
 }
-.nav-item:nth-child(3) > .search-container > input {
+
+.nav-item:nth-child(3)>.search-container>input {
   border: none;
   padding: 10px 18px;
   font-size: 16px;
 }
-.nav-item:nth-child(3) > .search-container > input:placeholder {
+
+.nav-item:nth-child(3)>.search-container>input:placeholder {
   color: #b4b4b4;
 }
-.nav-item:nth-child(3) > .search-container > .search-icon-container {
+
+.nav-item:nth-child(3)>.search-container>.search-icon-container {
   border: none;
   width: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.nav-item:nth-child(3) > .search-container > .search-icon-container > img {
+
+.nav-item:nth-child(3)>.search-container>.search-icon-container>img {
   width: 23px;
   height: 23px;
   object-fit: contain;
 }
+
 #profile-icon {
   width: 32px;
   height: 32px;
@@ -80,6 +101,7 @@ nav {
   margin-left: 28px;
   margin-top: 3px;
 }
+
 #cart-icon {
   width: 28px;
   height: 28px;
@@ -102,19 +124,23 @@ nav {
   color: #4a1d1f;
   margin-bottom: 20px;
 }
+
 .overview-top-container p {
   font-size: 24px;
   color: #272727;
   margin-bottom: 48px;
 }
+
 .overview-top-container .left-container {
   padding-top: 90px;
 }
+
 .overview-top-container .right-container {
   flex: 1;
   display: flex;
   justify-content: end;
-  position: relative; /* for cakes-carousel-container */
+  position: relative;
+  /* for cakes-carousel-container */
 }
 
 .overview-top-container .right-container img {
@@ -127,6 +153,7 @@ nav {
   display: flex;
   flex-direction: row;
 }
+
 /* Button: Order Now */
 .buttons-container button:nth-child(1) {
   display: flex;
@@ -138,6 +165,7 @@ nav {
   margin-right: 16px;
   font-size: 20px;
 }
+
 /* Button: See All Menus */
 .buttons-container button:nth-child(2) {
   display: flex;
@@ -163,24 +191,29 @@ nav {
   flex-direction: row;
   align-items: center;
 }
+
 .slider-container img {
   object-fit: contain;
 }
+
 .slider-container img:nth-child(1) {
   width: 25px;
   height: 15px;
 }
+
 .slider-container img:nth-child(2) {
   width: 30px;
   height: 20px;
   margin-left: 8px;
   margin-right: 8px;
 }
+
 .slider-container img:nth-child(3) {
   width: 25px;
   height: 15px;
   margin-right: 20px;
 }
+
 .slider-container img:nth-child(4),
 .slider-container img:nth-child(5),
 .slider-container img:nth-child(6) {
@@ -196,29 +229,35 @@ nav {
   grid-template-rows: auto auto;
   gap: 30px;
 }
+
 .baking-article .text-part {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .baking-article .text-part h1 {
   font-size: 44px;
   color: #4a1d1f;
   margin-bottom: 10px;
 }
+
 .baking-article .text-part p {
   font-size: 16px;
   color: #272727;
   line-height: 25px;
 }
+
 .baking-article .image-part {
   flex: 1;
 }
+
 .baking-article .image-part img {
   width: 600px;
   height: 353px;
   object-fit: contain;
 }
+
 .read-more-container {
   display: flex;
   flex-direction: row;
@@ -237,12 +276,14 @@ nav {
   padding: 70px 200px;
   background-color: #fbedcd;
 }
+
 .cake-order-container h1 {
   font-size: 36px;
   font-weight: 900;
   color: #4a1d1f;
   margin-bottom: 20px;
 }
+
 .cake-order-container p {
   font-size: 20px;
   color: #272727;
@@ -250,6 +291,7 @@ nav {
   text-align: center;
   line-height: 30px;
 }
+
 .cake-order-container button {
   background-color: #4a1d1f;
   color: #f0fdf4;
@@ -270,8 +312,7 @@ nav {
   margin-bottom: 20px;
   padding: 0 20px;
   gap: 20px;
-  /* max-width: 1269px; */
-  height: 128px;
+  height: 228px;
   background: linear-gradient(to right, #fffefe, #fdf6e4);
 }
 
@@ -317,7 +358,6 @@ display: inline-block; */
 .container {
   display: flex;
   gap: 71px;
-  /* margin: 20px; */
   overflow: hidden;
 }
 
@@ -359,18 +399,16 @@ display: inline-block; */
   width: 20px;
   height: 20px;
   background-color: #ffa903;
-  clip-path: polygon(
-    50% 0%,
-    61% 35%,
-    98% 35%,
-    68% 57%,
-    79% 91%,
-    50% 70%,
-    21% 91%,
-    32% 57%,
-    2% 35%,
-    39% 35%
-  );
+  clip-path: polygon(50% 0%,
+      61% 35%,
+      98% 35%,
+      68% 57%,
+      79% 91%,
+      50% 70%,
+      21% 91%,
+      32% 57%,
+      2% 35%,
+      39% 35%);
   margin-right: 2px;
 }
 
@@ -399,15 +437,14 @@ display: inline-block; */
 
 /* second page */
 .review-section {
+  position: relative;
   width: 977px;
   height: 180px;
   margin: 50px auto 0;
   text-align: center;
-  position: relative;
 }
 
 .quotes-label {
-  /* border: 3px solid red; */
   position: absolute;
   font-size: 12px;
   top: 12px;
@@ -475,7 +512,7 @@ display: inline-block; */
   position: relative;
   width: 142px;
   /* height: 98px; */
-  top: 102px;
+  top: 82px;
   left: 28px;
   /* background-image: url('./assets/img/quotation-1.png'); */
   background-size: cover;
@@ -505,14 +542,15 @@ display: inline-block; */
 
 /* Footer */
 footer {
-  position: fixed;
-  bottom: 0;
-  background-color: #fbedcd;
-  width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 10px 20px;
+  position: relative;
+  bottom: -550px;
+  background-color: #fbedcd;
+  width: 100%;
+  /* padding: 10px 20px; */
   z-index: 10;
+
 }
 
 .footer-content {
@@ -552,7 +590,7 @@ footer {
   padding: 10px 20px;
   margin-left: 152px;
   overflow: auto;
-  padding-bottom: 99px;
+  padding-bottom: 79px;
 }
 
 .footer-bottom {
