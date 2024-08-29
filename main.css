@@ -88,10 +88,11 @@ nav {
 }
 
 .overview-top-container {
-  background-color: pink;
   padding-left: 90px;
+  padding-bottom: 60px;
   display: flex;
   flex-direction: row;
+  background-color: rgb(244, 244, 142);
 }
 
 .overview-top-container h1 {
@@ -111,9 +112,8 @@ nav {
 .overview-top-container .right-container {
   flex: 1;
   display: flex;
-
   justify-content: end;
-  background-color: lightcoral;
+  position: relative; /* for cakes-carousel-container */
 }
 
 .overview-top-container .right-container img {
@@ -145,4 +145,45 @@ nav {
   border-radius: 5px;
   padding: 10px 30px;
   font-size: 20px;
+}
+
+.cakes-carousel-container {
+  position: absolute;
+  bottom: -60px;
+  right: -150px;
+  padding: 10px 65px 20px 65px;
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* <-- 01/12 --> */
+.slider-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.slider-container img {
+  object-fit: contain;
+}
+.slider-container img:nth-child(1) {
+  width: 25px;
+  height: 15px;
+}
+.slider-container img:nth-child(2) {
+  width: 30px;
+  height: 20px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.slider-container img:nth-child(3) {
+  width: 25px;
+  height: 15px;
+  margin-right: 20px;
+}
+.slider-container img:nth-child(4),
+.slider-container img:nth-child(5),
+.slider-container img:nth-child(6) {
+  width: 230px;
+  height: 130px;
+  object-fit: contain;
 }
