@@ -520,10 +520,8 @@ nav {
 .quotation-mark-1 {
   position: relative;
   width: 142px;
-  /* height: 98px; */
   top: 82px;
   left: 28px;
-  /* background-image: url('./assets/img/quotation-1.png'); */
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
@@ -536,10 +534,8 @@ nav {
 .quotation-mark-2 {
   position: relative;
   width: 142px;
-  /* height: 98px; */
   top: -50%;
   left: 830px;
-  /* background-image: url('./assets/img/quotation-2.png'); */
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
