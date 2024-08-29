@@ -93,6 +93,7 @@ nav {
   display: flex;
   flex-direction: row;
   background-color: rgb(244, 244, 142);
+  overflow: hidden;
 }
 
 .overview-top-container h1 {
@@ -186,4 +187,73 @@ nav {
   width: 230px;
   height: 130px;
   object-fit: contain;
+}
+
+.baking-article {
+  padding: 0px 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 30px;
+}
+.baking-article .text-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.baking-article .text-part h1 {
+  font-size: 44px;
+  color: #4a1d1f;
+  margin-bottom: 10px;
+}
+.baking-article .text-part p {
+  font-size: 16px;
+  color: #272727;
+  line-height: 25px;
+}
+.baking-article .image-part {
+  flex: 1;
+}
+.baking-article .image-part img {
+  width: 600px;
+  height: 353px;
+  object-fit: contain;
+}
+.read-more-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.baking-article:nth-child(1) {
+  margin-bottom: 60px;
+}
+
+.cake-order-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 200px;
+  background-color: #fbedcd;
+}
+.cake-order-container h1 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #4a1d1f;
+  margin-bottom: 20px;
+}
+.cake-order-container p {
+  font-size: 20px;
+  color: #272727;
+  margin-bottom: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+.cake-order-container button {
+  background-color: #4a1d1f;
+  color: #f0fdf4;
+  border: none;
+  border-radius: 5px;
+  padding: 14px 28px;
 }
