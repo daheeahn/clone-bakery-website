@@ -6,6 +6,7 @@
 
 - What [@daheeahn: Dahee Ahn](https://github.com/daheeahn) and [@joyy-frontend: Hyeri Ko](https://github.com/joyy-frontend) worked on:
   <img src="./assets/work-part.jpg" alt="Project Preview" width="500" height="1500">
+- (This is the original screenshot from Figma)
 
 ### Credit
 
